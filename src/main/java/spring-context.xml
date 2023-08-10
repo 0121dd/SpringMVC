@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:component-scan base-package="com.iei.customer"></context:component-scan>
+
+<!-- ref는 객체 value는 리터럴 -->
+<!-- 	<bean id="customer" class="com.iei.customer.domain.CustomerVO"> -->
+	<!-- 해당 필드(멤버 변수) 초기화 -->
+<!-- 		<property name="customerId" value="1"></property> -->
+<!-- 		<property name="customerName" value="일용자"></property> -->
+<!-- 		<property name="address" > -->
+<!-- 			<value>서울시 문방구</value> -->
+<!-- 		</property> -->
+<!-- 		<property name="email" value="khuser01@kh.com"></property> -->
+<!-- 		<constructor-arg value="2"></constructor-arg> -->
+<!-- 		<constructor-arg value="이용자"></constructor-arg> -->
+<!-- 		<constructor-arg value="경기도 고양시"></constructor-arg> -->
+<!-- 		<constructor-arg value="khuser02@kh.net"></constructor-arg> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean id="customerStore" class="com.iei.customer.store.logic.CustomerStoreLogic" /> -->
+<!-- 	<bean id="customerService" class="com.iei.customer.service.impl.CustomerServiceImpl"> -->
+		<!-- setter()로 의존성 주입 -->
+<!-- 		<property name="store" ref="customerStore"></property> -->
+		<!-- 생성자로 의존성 주입 -->
+<!-- 		<constructor-arg ref="customerStore" /> -->
+<!-- 	</bean> -->
+</beans>
