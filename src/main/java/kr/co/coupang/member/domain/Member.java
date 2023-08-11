@@ -10,11 +10,40 @@ public class Member {
 	private String memberGender;
 	private String memberEmail;
 	private String memberPhone;
-	private String memberAddress;
+	private String memberAddr;
 	private String memberHobby;
 	private Timestamp memberDate;
 	private Timestamp updateDate;
 	private String memberYn;
+	
+	public Member() {}
+	
+	public Member(String memberId, String memberPw, String memberEmail, String memberPhone, String memberAddr,
+			String memberHobby) {
+		super();
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.memberEmail = memberEmail;
+		this.memberPhone = memberPhone;
+		this.memberAddr = memberAddr;
+		this.memberHobby = memberHobby;
+	}
+
+	public Member(String memberId, String memberPw, String memberName, int memberAge, String memberGender,
+			String memberEmail, String memberPhone, String memberAddr, String memberHobby) {
+		super();
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.memberName = memberName;
+		this.memberAge = memberAge;
+		this.memberGender = memberGender;
+		this.memberEmail = memberEmail;
+		this.memberPhone = memberPhone;
+		this.memberAddr = memberAddr;
+		this.memberHobby = memberHobby;
+	}
+
+
 	public String getMemberId() {
 		return memberId;
 	}
@@ -57,11 +86,11 @@ public class Member {
 	public void setMemberPhone(String memberPhone) {
 		this.memberPhone = memberPhone;
 	}
-	public String getMemberAddress() {
-		return memberAddress;
+	public String getMemberAddr() {
+		return memberAddr;
 	}
-	public void setMemberAddress(String memberAddress) {
-		this.memberAddress = memberAddress;
+	public void setMemberAddr(String memberAddr) {
+		this.memberAddr = memberAddr;
 	}
 	public String getMemberHobby() {
 		return memberHobby;
@@ -91,7 +120,7 @@ public class Member {
 	public String toString() {
 		return "회원 [아이디=" + memberId + ", 비밀번호=" + memberPw + ", 이름=" + memberName + ", 나이="
 				+ memberAge + ", 성별=" + memberGender + ", 이메일=" + memberEmail + ", 전화번호="
-				+ memberPhone + ", 주소=" + memberAddress + ", 취미=" + memberHobby + ", 가입일="
+				+ memberPhone + ", 주소=" + memberAddr + ", 취미=" + memberHobby + ", 가입일="
 				+ memberDate + ", 수정일=" + updateDate + ", 회원여부=" + memberYn + "]";
 	}
 	

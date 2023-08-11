@@ -7,7 +7,7 @@
 	<typeAliases>
 		<typeAlias type="kr.co.coupang.member.domain.Member" alias="Member" />
 	</typeAliases>
-<!-- 	<mappers> -->
-<!-- 		<mapper resource="mappers/member-mapper.xml"/> -->
-<!-- 	</mappers> -->
+	<mappers>
+		<mapper resource="mappers/member-mapper.xml"/>
+	</mappers>
 </configuration>

@@ -1,5 +1,18 @@
 package kr.co.coupang.member.store;
 
-public interface MemberStore {
+import org.apache.ibatis.session.SqlSession;
 
+import kr.co.coupang.member.domain.Member;
+
+public interface MemberStore {
+	
+	public int insertMember(SqlSession sqlSession, Member member);
+
+	public Member selectMemberLogin(SqlSession sqlSession, Member member);
+	
+	public Member selectOneById(SqlSession sqlSession, String memberId);
+
+	public int deleteMember(SqlSession sqlSession, String memberId);
+
+	public int updateMember(SqlSession sqlSession, Member member);
 }
